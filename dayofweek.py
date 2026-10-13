@@ -31,10 +31,13 @@ def zellers_congruence(day: int, month: int, year: int) -> str:
     return days[h]
 
 
-# --- Example Verification ---
+# ---  Verification ---
 if __name__ == "__main__":
-    # Test for Halloween 2026 (October 31, 2026)
-    test_day, test_month, test_year = 31, 10, 2026
+    # accepts date from user
+    test_day = int(input("Enter day (1-31): "))
+    test_month = int(input("Enter month (1-12): "))
+    test_year = int(input("Enter year e.g. 2026: "))
+
     result = zellers_congruence(test_day, test_month, test_year)
     print(f"The date {test_year}-{test_month:02d}-{test_day:02d} falls on a {result}.")
-    # Output: The date 2026-10-31 falls on a Saturday.
+    # Output: The Anglo-Saxon day of week
